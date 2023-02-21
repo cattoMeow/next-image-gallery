@@ -69,15 +69,15 @@ export default function Home({ data }) {
                 onChange={(e) => setQuery(e.target.value)}
               />
               <InputRightElement
-                children={
+                children={[
                   <IconButton
                     aria-label="Search"
                     icon={<Search2Icon />}
                     onClick={handleSubmit}
                     bg="pink.400"
                     color="white"
-                  />
-                }
+                  />,
+                ]}
               />
             </InputGroup>
           </form>
