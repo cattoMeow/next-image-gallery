@@ -68,7 +68,7 @@ export default function Home({ data }) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
-              <InputRightElement
+              {/* <InputRightElement
                 children={[
                   <IconButton
                     aria-label="Search"
@@ -78,12 +78,17 @@ export default function Home({ data }) {
                     color="white"
                   />,
                 ]}
-              />
+              /> */}
             </InputGroup>
           </form>
           <Wrap px="1rem" spacing={4} justify="center">
             {photos.map((pic) => (
-              <Flex minWidth="max-content" alignItems="center" gap="2">
+              <Flex
+                minWidth="max-content"
+                alignItems="center"
+                gap="2"
+                key={pic.id}
+              >
                 <WrapItem
                   key={pic.id}
                   boxShadow="sm"
