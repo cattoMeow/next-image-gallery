@@ -45,7 +45,7 @@ export default function Home({ data }) {
   return (
     <div>
       <Head>
-        <title>NextJS Image Gallery</title>
+        <title>Photo Gallery</title>
         <link rel="icon" href="/favicon.ico"></link>
       </Head>
       <Box overflow="hidden" bg="purple.100" minH="10vh">
@@ -58,7 +58,7 @@ export default function Home({ data }) {
             textDecoration="underline"
             fontSize={["4xl", "4xl", "5xl", "5xl"]}
           >
-            NextJS Image Gallery
+            Photo Gallery
           </Text>
           <form onSubmit={handleSubmit}>
             <InputGroup pb="1rem">
